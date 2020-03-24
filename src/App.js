@@ -19,7 +19,7 @@ export default function App() {
           <Router>
             <MapChart path="/" />
             <ConfirmedChart path="/contagios" />
-            <ConfirmedByProvinceChart path="/contagios-provincia" />
+            <ConfirmedByProvinceChart path="/contagios-municipio" />
             {/*<DetailsChart path="/detalles" /> */}
           </Router>
         </section>
