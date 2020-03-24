@@ -21,8 +21,6 @@ REACT_APP_MAPBOX_ACCESS_TOKEN=token
 **Otros Países/Estados**
 Tomen este repo y háganlo suyo. Está claro que nuestros gobiernos no nos van a facilitar la visualización y rastreo del impácto del virus, por lo que les pido lo tomen en sus manos.
 
-✊✊🏻✊🏼✊🏽✊🏾✊🏿
-
 🇪🇨https://www.monitorec.app
 
 🇧🇷https://covid19br.app
