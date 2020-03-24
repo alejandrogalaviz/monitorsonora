@@ -9,7 +9,7 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 4,
+    confirmed: 5,
     deaths: 0,
     // surveillance: 1347,
     suspicious: 13,
@@ -24,7 +24,7 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 23.03 | 10:30pm | Fuente:{" "}
+          Última actualización: 24.03 | 10:17am | Fuente:{" "}
           <a href="https://www.gob.mx/">GOBIERNO DE MÉXICO</a>
         </small>
       </p>
