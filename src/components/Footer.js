@@ -10,7 +10,7 @@ export default function Footer() {
         &copy;{year} - alejandrogalaviz
       </a>
       <br />
-      <a href="https://github.com/alejandrogalaviz/covid19-monitor">
+      <a href="https://github.com/alejandrogalaviz/covid19-monitor-sonora">
         ¿Me ayudas?
       </a>
     </footer>
