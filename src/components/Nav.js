@@ -56,10 +56,10 @@ export default function Nav() {
       <Link to="contagios" getProps={isActive}>
         Diarios
       </Link>
-      {/* <Link to="total-acumulado" getProps={isActive}>
-        Total Acumulado
+      <Link to="casos-totales" getProps={isActive}>
+        Casos Totales
       </Link>
-      <Link to="detalles" getProps={isActive}>
+      {/*<Link to="detalles" getProps={isActive}>
         Detalle
       </Link> */}
     </Navigation>

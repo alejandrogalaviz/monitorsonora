@@ -86,10 +86,10 @@ const accumulated = {
   datasets: [
     {
       label: "Casos Totales",
-      // type: "line",
+      type: "line",
       pointBorderColor: "hsla(163, 72%, 48%, 1.0)",
       pointBackgroundColor: "hsla(163, 72%, 48%, 0.7)",
-      backgroundColor: "hsla(163, 72%, 48%, .4)",
+      backgroundColor: "transparent",
       borderColor: "hsla(163, 72%, 48%, 1.0)",
       borderWidth: 1,
       hoverBackgroundColor: "hsla(163, 72%, 48%, .9)",

@@ -21,8 +21,8 @@ export default function App() {
             <MapChart path="/" />
             <ConfirmedChart path="/contagios" />
             <ConfirmedByProvinceChart path="/contagios-municipio" />
-            {/* <AccumulatedChart path="/total-acumulado" />
-            <DetailsChart path="/detalles" /> */}
+            <AccumulatedChart path="/casos-totales" />
+            {/* <DetailsChart path="/detalles" /> */}
           </Router>
         </section>
       </main>
