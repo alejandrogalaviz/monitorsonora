@@ -3,9 +3,6 @@ This project was forked from [juanmnl/covid19-monitor](https://github.com/juanmn
 
 ## SON
 
-**Lo primero y más importante a hacer: buscar la forma de traducir la app a Kichwa.**
-
-
 Para dev
 
 - crear token en mapbox.com
