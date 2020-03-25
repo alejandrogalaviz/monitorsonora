@@ -25,7 +25,7 @@ const ChartPieSection = styled.div`
   }
 `;
 
-const datesArray = getDates(new Date("02/28/2020"), new Date());
+const datesArray = getDates(new Date("03/15/2020"), new Date());
 
 const confirmed = {
   labels: datesArray.map(date => date.displayFormat),
@@ -44,33 +44,7 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [
-        0,
-        1,
-        5,
-        1,
-        0,
-        3,
-        3,
-        1,
-        0,
-        1,
-        0,
-        2,
-        0,
-        2,
-        1,
-        8,
-        9,
-        21,
-        53,
-        57,
-        92,
-        216,
-        106,
-        257,
-        192
-      ]
+      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1]
     }
   ]
 };

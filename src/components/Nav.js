@@ -53,9 +53,9 @@ export default function Nav() {
       <Link to="contagios-municipio" getProps={isActive}>
         X Municipio
       </Link>
-      {/* <Link to="contagios" getProps={isActive}>
+      <Link to="contagios" getProps={isActive}>
         X Día
-      </Link> */}
+      </Link>
       {/* <Link to="detalles" getProps={isActive}>
         Detalle
       </Link> */}
