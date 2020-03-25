@@ -3,6 +3,7 @@ import { Router } from "@reach/router";
 import MapChart from "../src/components/MapChart";
 import {
   ConfirmedChart,
+  AccumulatedChart,
   ConfirmedByProvinceChart,
   DetailsChart
 } from "../src/components/Charts";
@@ -20,7 +21,8 @@ export default function App() {
             <MapChart path="/" />
             <ConfirmedChart path="/contagios" />
             <ConfirmedByProvinceChart path="/contagios-municipio" />
-            {/*<DetailsChart path="/detalles" /> */}
+            {/* <AccumulatedChart path="/total-acumulado" />
+            <DetailsChart path="/detalles" /> */}
           </Router>
         </section>
       </main>

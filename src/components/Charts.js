@@ -31,8 +31,8 @@ const confirmed = {
   labels: datesArray.map(date => date.displayFormat),
   datasets: [
     {
-      label: "Confirmados",
-      type: "line",
+      label: "Confirmados Diarios",
+      // type: 'line',
       pointBorderColor: "hsla(163, 72%, 48%, 1.0)",
       pointBackgroundColor: "hsla(163, 72%, 48%, 0.7)",
       backgroundColor: "hsla(163, 72%, 48%, .4)",
@@ -81,6 +81,60 @@ export function ConfirmedChart() {
     </>
   );
 }
+const accumulated = {
+  labels: datesArray.map(date => date.displayFormat),
+  datasets: [
+    {
+      label: "Casos Totales",
+      // type: "line",
+      pointBorderColor: "hsla(163, 72%, 48%, 1.0)",
+      pointBackgroundColor: "hsla(163, 72%, 48%, 0.7)",
+      backgroundColor: "hsla(163, 72%, 48%, .4)",
+      borderColor: "hsla(163, 72%, 48%, 1.0)",
+      borderWidth: 1,
+      hoverBackgroundColor: "hsla(163, 72%, 48%, .9)",
+      hoverBorderColor: "hsla(163, 72%, 48%, 1)",
+      pointRadius: 6,
+      pointStyle: "mitter",
+      showLines: false,
+      lineTension: 0.3,
+      data: [0, 1, 1, 2, 2, 2, 3, 4, 4, 5]
+    }
+  ]
+};
+
+export function AccumulatedChart() {
+  return (
+    <>
+      <ChartSection>
+        <Bar
+          data={accumulated}
+          width={100}
+          height={50}
+          options={{
+            maintainAspectRatio: false,
+            legend: {
+              display: true,
+              position: "top",
+              fullWidth: true,
+              reverse: false,
+              labels: {
+                fontColor: "hsla(163, 72%, 48%, 1)"
+              }
+            },
+            scales: {
+              yAxes: [
+                {
+                  // type: 'logarithmic'
+                }
+              ]
+            }
+          }}
+        />
+      </ChartSection>
+    </>
+  );
+}
 
 const labels = SonoraData.map(province => province.name);
 const confirmedCases = SonoraData.map(province => province.confirmed);
@@ -88,7 +142,7 @@ const confirmedByProvince = {
   labels: labels,
   datasets: [
     {
-      label: "Confirmados",
+      label: "Confirmados por Municipio",
       backgroundColor: "hsla(163, 72%, 48%, .4)",
       borderColor: "hsla(163, 72%, 48%, 1.0)",
       borderWidth: 1,
