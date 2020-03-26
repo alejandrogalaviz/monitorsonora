@@ -12,7 +12,7 @@ export default function Sonora() {
     confirmed: 5,
     deaths: 0,
     // surveillance: 1347,
-    suspicious: 15,
+    suspicious: 35,
     // negatives: 1091,
     recoveries: 0
     // tests: 2780
