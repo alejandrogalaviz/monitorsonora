@@ -12,7 +12,7 @@ export default function Sonora() {
     confirmed: 8,
     deaths: 0,
     // surveillance: 1347,
-    suspicious: 35,
+    suspicious: 48,
     // negatives: 1091,
     recoveries: 0
     // tests: 2780
@@ -24,7 +24,7 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 25.03 | 07:00pm | Fuente:{" "}
+          Última actualización: 26.03 | 10:55pm | Fuente:{" "}
           <a href="https://www.gob.mx/">GOBIERNO DE MÉXICO</a>
         </small>
       </p>
