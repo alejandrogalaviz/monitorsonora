@@ -20,7 +20,7 @@ const Navigation = styled.nav`
     font-size: 0.7rem;
     line-height: 1.4rem;
     text-transform: uppercase;
-    margin-left: 0.4rem;
+    margin-left: 0.22rem;
     text-decoration: none;
     background-color: transparent;
     transition: 280ms background-color ease-in-out;

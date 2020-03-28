@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -122,6 +122,10 @@ export const GlobalStyle = createGlobalStyle`
       :last-of-type {
         padding: 0;
         overflow: hidden;
+
+        > section {
+          padding:0.2rem
+        }
         
         > div {
           margin-top: 0;
