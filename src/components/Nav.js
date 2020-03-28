@@ -57,7 +57,7 @@ export default function Nav() {
         Diarios
       </Link>
       <Link to="casos-totales" getProps={isActive}>
-        Casos Totales
+        Totales
       </Link>
       {/*<Link to="detalles" getProps={isActive}>
         Detalle
