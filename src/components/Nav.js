@@ -54,10 +54,10 @@ export default function Nav() {
         Municipios
       </Link>
       <Link to="contagios" getProps={isActive}>
-        Diarios
+        Diario
       </Link>
       <Link to="casos-totales" getProps={isActive}>
-        Totales
+        Total
       </Link>
       {/*<Link to="detalles" getProps={isActive}>
         Detalle
