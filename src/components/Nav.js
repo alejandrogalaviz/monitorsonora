@@ -16,11 +16,11 @@ const Navigation = styled.nav`
   > a {
     display: inline-block;
     font-weight: bolder;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.3rem;
     font-size: 0.7rem;
     line-height: 1.4rem;
     text-transform: uppercase;
-    margin-left: 0.22rem;
+    margin-left: 0.2rem;
     text-decoration: none;
     background-color: transparent;
     transition: 280ms background-color ease-in-out;
@@ -35,6 +35,10 @@ const Navigation = styled.nav`
       transform: scale(0.9);
       transition: 280ms background-color ease-in-out;
     }
+  }
+
+  @media (max-width: 960px) {
+    text-align: center;
   }
 
   .active {
