@@ -153,7 +153,7 @@ export const GlobalStyle = createGlobalStyle`
 
     footer {
       padding-bottom: 1rem;
-      display: flex;
+      display: block;
       justify-content: space-between;
     }
 
