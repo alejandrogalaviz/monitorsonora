@@ -4,8 +4,7 @@ import MapChart from "../src/components/MapChart";
 import {
   ConfirmedChart,
   AccumulatedChart,
-  ConfirmedByProvinceChart,
-  DetailsChart
+  ConfirmedByProvinceChart
 } from "../src/components/Charts";
 import { GlobalStyle } from "../src/components/GlobalStyle";
 import DataPanel from "../src/components/DataPanel";

@@ -13,7 +13,7 @@ export default function DataPanel() {
       <div>
         <h2>
           Sonora{" "}
-          <span role="img" aria-label="Sonora Flag">
+          <span role="img" aria-label="Mexico Flag">
             MX
           </span>
         </h2>
