@@ -44,7 +44,7 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 3, 0, 2, 4]
+      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 3, 0, 2, 4, 3]
     }
   ]
 };
@@ -98,7 +98,7 @@ const accumulated = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [0, 1, 1, 2, 2, 2, 3, 4, 4, 5, 8, 8, 10, 14]
+      data: [0, 1, 1, 2, 2, 2, 3, 4, 4, 5, 8, 8, 10, 14, 17]
     }
   ]
 };
