@@ -206,6 +206,19 @@ const data = [
       lat: 27.5505,
       lng: -110.0822
     }
+  },
+  {
+    id: 16,
+    name: "Sáric",
+    capital: "Sáric",
+    confirmed: 1,
+    deaths: 0,
+    compromised: 0,
+    status: null,
+    coord: {
+      lat: 31.104,
+      lng: -111.3788
+    }
   }
 ];
 

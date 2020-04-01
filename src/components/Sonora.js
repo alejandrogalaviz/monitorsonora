@@ -9,13 +9,13 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 17,
+    confirmed: 18,
     deaths: 0,
-    // surveillance: 160,
-    suspicious: 62,
-    // negatives: 1091,
-    recoveries: 0
-    // tests: 2780
+    surveillance: 193,
+    suspicious: 79,
+    negatives: 118,
+    recoveries: 0,
+    tests: 215
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -24,7 +24,7 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 31.03 | 07:45am | Fuente:{" "}
+          Última actualización: 31.03 | 08:40pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
@@ -37,30 +37,30 @@ export default function Sonora() {
           <p>{dataTotals.deaths}</p>
           <h3>Decesos</h3>
         </StatBlock>
-        {/* <StatBlock>
+        <StatBlock>
           <p>{dataTotals.surveillance}</p>
           <h3>Monitoreo</h3>
-        </StatBlock> */}
+        </StatBlock>
         <StatBlock>
           <p>{dataTotals.suspicious}</p>
           <h3>Sospecha</h3>
         </StatBlock>
-        {/* <StatBlock>
+        <StatBlock>
           <p>{dataTotals.negatives}</p>
           <h3>Descartados</h3>
-        </StatBlock> */}
+        </StatBlock>
         <StatBlock>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
-        {/* <StatBlock>
+        <StatBlock>
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
-        </StatBlock> */}
-        {/* <StatBlock>
+        </StatBlock>
+        <StatBlock>
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos : Pruebas</h3>
-        </StatBlock> */}
+        </StatBlock>
       </StatGrid>
       <br />
       <h4>Municipio / Confirmados</h4>
