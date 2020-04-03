@@ -3,7 +3,7 @@ const data = [
     id: 0,
     name: "Hermosillo",
     capital: "Hermosillo",
-    confirmed: 11,
+    confirmed: 12,
     deaths: 0,
     // compromised: 0,
     status: null,
