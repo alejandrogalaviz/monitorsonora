@@ -172,8 +172,8 @@ const data = [
     id: 13,
     name: "Magdalena",
     capital: "Magdalena",
-    confirmed: 2,
-    deaths: 0,
+    confirmed: 3,
+    deaths: 1,
     compromised: 0,
     status: null,
     coord: {

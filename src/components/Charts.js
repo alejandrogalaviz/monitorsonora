@@ -44,7 +44,7 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 3, 0, 2, 4, 3, 0, 1, 3, 1, 6],
+      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 3, 0, 2, 4, 3, 0, 1, 3, 1, 6, 1],
     },
   ],
 };
@@ -119,6 +119,7 @@ const accumulated = {
         21,
         22,
         28,
+        29,
       ],
     },
   ],
@@ -202,15 +203,15 @@ export function ConfirmedByProvinceChart() {
 
 const data = {
   labels: [
-    "Recuperados 7.13%",
-    "Estables/Domicilio - 53.57%",
-    "Estables/Hospital - 25.00%",
-    "Graves/Hospital - 15.30%",
-    "Fallecidos - 0.00%",
+    "Recuperados 6.9%",
+    "Estables/Domicilio - 51.72%",
+    "Estables/Hospital - 24.14%",
+    "Graves/Hospital - 13.80%",
+    "Fallecidos - 3.45%",
   ],
   datasets: [
     {
-      data: [2, 15, 7, 4, 0],
+      data: [2, 15, 7, 4, 1],
       borderColor: "hsla(164, 23%, 3%, 0.6)",
       backgroundColor: [
         "hsla(163, 72%, 100%, 0.9)",
