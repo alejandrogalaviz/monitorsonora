@@ -9,13 +9,13 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 22,
+    confirmed: 28,
     deaths: 0,
     // surveillance: 193,
     suspicious: 147,
     negatives: 152,
     recoveries: 2,
-    tests: 321
+    tests: 321,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -66,7 +66,7 @@ export default function Sonora() {
       <h4>Municipio / Confirmados</h4>
       <br />
       <TwoCols>
-        {sortedProvinces.map(province => (
+        {sortedProvinces.map((province) => (
           <Row key={province.id}>
             <span>{province.name}</span>
             <Separator />

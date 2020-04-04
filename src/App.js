@@ -4,7 +4,8 @@ import MapChart from "../src/components/MapChart";
 import {
   ConfirmedChart,
   AccumulatedChart,
-  ConfirmedByProvinceChart
+  ConfirmedByProvinceChart,
+  DetailsChart,
 } from "../src/components/Charts";
 import { GlobalStyle } from "../src/components/GlobalStyle";
 import DataPanel from "../src/components/DataPanel";
@@ -21,7 +22,7 @@ export default function App() {
             <ConfirmedChart path="/contagios" />
             <ConfirmedByProvinceChart path="/contagios-municipio" />
             <AccumulatedChart path="/casos-totales" />
-            {/* <DetailsChart path="/detalles" /> */}
+            <DetailsChart path="/detalles" />
           </Router>
         </section>
       </main>

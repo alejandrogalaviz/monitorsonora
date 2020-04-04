@@ -28,7 +28,7 @@ const ChartPieSection = styled.div`
 const datesArray = getDates(new Date("03/15/2020"), new Date());
 
 const confirmed = {
-  labels: datesArray.map(date => date.displayFormat),
+  labels: datesArray.map((date) => date.displayFormat),
   datasets: [
     {
       label: "Confirmados Diarios",
@@ -44,9 +44,9 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 3, 0, 2, 4, 3, 0, 1, 3, 1]
-    }
-  ]
+      data: [0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 3, 0, 2, 4, 3, 0, 1, 3, 1, 6],
+    },
+  ],
 };
 
 export function ConfirmedChart() {
@@ -65,16 +65,16 @@ export function ConfirmedChart() {
               fullWidth: true,
               reverse: false,
               labels: {
-                fontColor: "hsla(163, 72%, 48%, 1)"
-              }
+                fontColor: "hsla(163, 72%, 48%, 1)",
+              },
             },
             scales: {
               yAxes: [
                 {
                   // type: 'logarithmic'
-                }
-              ]
-            }
+                },
+              ],
+            },
           }}
         />
       </ChartSection>
@@ -82,7 +82,7 @@ export function ConfirmedChart() {
   );
 }
 const accumulated = {
-  labels: datesArray.map(date => date.displayFormat),
+  labels: datesArray.map((date) => date.displayFormat),
   datasets: [
     {
       label: "Casos Totales",
@@ -98,9 +98,30 @@ const accumulated = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [0, 1, 1, 2, 2, 2, 3, 4, 4, 5, 8, 8, 10, 14, 17, 17, 18, 21, 22]
-    }
-  ]
+      data: [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        8,
+        8,
+        10,
+        14,
+        17,
+        17,
+        18,
+        21,
+        22,
+        28,
+      ],
+    },
+  ],
 };
 
 export function AccumulatedChart() {
@@ -119,16 +140,16 @@ export function AccumulatedChart() {
               fullWidth: true,
               reverse: false,
               labels: {
-                fontColor: "hsla(163, 72%, 48%, 1)"
-              }
+                fontColor: "hsla(163, 72%, 48%, 1)",
+              },
             },
             scales: {
               yAxes: [
                 {
                   // type: 'logarithmic'
-                }
-              ]
-            }
+                },
+              ],
+            },
           }}
         />
       </ChartSection>
@@ -136,8 +157,8 @@ export function AccumulatedChart() {
   );
 }
 
-const labels = SonoraData.map(province => province.name);
-const confirmedCases = SonoraData.map(province => province.confirmed);
+const labels = SonoraData.map((province) => province.name);
+const confirmedCases = SonoraData.map((province) => province.confirmed);
 const confirmedByProvince = {
   labels: labels,
   datasets: [
@@ -148,9 +169,9 @@ const confirmedByProvince = {
       borderWidth: 1,
       hoverBackgroundColor: "hsla(163, 72%, 48%, .9)",
       hoverBorderColor: "hsla(163, 72%, 48%, 1)",
-      data: confirmedCases
-    }
-  ]
+      data: confirmedCases,
+    },
+  ],
 };
 
 export function ConfirmedByProvinceChart() {
@@ -169,9 +190,9 @@ export function ConfirmedByProvinceChart() {
               fullWidth: true,
               reverse: false,
               labels: {
-                fontColor: "hsla(163, 72%, 48%, 1)"
-              }
-            }
+                fontColor: "hsla(163, 72%, 48%, 1)",
+              },
+            },
           }}
         />
       </ChartSection>
@@ -184,29 +205,29 @@ const data = {
     "Recuperados",
     "Estables/Domicilio",
     "Estables/Hospital",
-    "Pronóstico Reservado/Hospital",
-    "Fallecidos"
+    "Graves/Hospital",
+    "Fallecidos",
   ],
   datasets: [
     {
-      data: [3, 824, 95, 41, 18],
+      data: [2, 15, 7, 4, 0],
       borderColor: "hsla(164, 23%, 3%, 0.6)",
       backgroundColor: [
         "hsla(163, 72%, 100%, 0.9)",
         "hsla(163, 72%, 48%, 0.7)",
         "hsla(50, 100%, 64%, 0.7)",
         "hsla(25, 100%, 67%, 0.7)",
-        "hsla(0, 100%, 67%, 0.7)"
+        "hsla(0, 100%, 67%, 0.7)",
       ],
       hoverBackgroundColor: [
         "hsla(163, 72%, 100%, 1.0)",
         "hsla(163, 72%, 48%, 1.0)",
         "hsla(50, 100%, 64%, 1.0)",
         "hsla(25, 100%, 67%, 1.0)",
-        "hsla(0, 100%, 67%, 1.0)"
-      ]
-    }
-  ]
+        "hsla(0, 100%, 67%, 1.0)",
+      ],
+    },
+  ],
 };
 
 export function DetailsChart() {
@@ -224,9 +245,9 @@ export function DetailsChart() {
             fullWidth: true,
             reverse: false,
             labels: {
-              fontColor: "hsla(163, 72%, 48%, 1)"
-            }
-          }
+              fontColor: "hsla(163, 72%, 48%, 1)",
+            },
+          },
         }}
       />
     </ChartPieSection>

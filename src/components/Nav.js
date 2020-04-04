@@ -63,9 +63,9 @@ export default function Nav() {
       <Link to="casos-totales" getProps={isActive}>
         Total
       </Link>
-      {/*<Link to="detalles" getProps={isActive}>
+      <Link to="detalles" getProps={isActive}>
         Detalle
-      </Link> */}
+      </Link>
     </Navigation>
   );
 }
