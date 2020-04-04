@@ -202,11 +202,11 @@ export function ConfirmedByProvinceChart() {
 
 const data = {
   labels: [
-    "Recuperados",
-    "Estables/Domicilio",
-    "Estables/Hospital",
-    "Graves/Hospital",
-    "Fallecidos",
+    "Recuperados 7.13%",
+    "Estables/Domicilio - 53.57%",
+    "Estables/Hospital - 25.00%",
+    "Graves/Hospital - 15.30%",
+    "Fallecidos - 0.00%",
   ],
   datasets: [
     {
