@@ -23,7 +23,7 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 05.04 | 08:50pm | Fuente:{" "}
+          Última actualización: 06.04 | 09:50pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
