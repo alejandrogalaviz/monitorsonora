@@ -14,7 +14,7 @@ export default function Sonora() {
     suspicious: 67,
     negatives: 288,
     recoveries: 4,
-    tests: 374,
+    tests: 391,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
