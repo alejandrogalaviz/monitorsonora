@@ -42,7 +42,7 @@ const data = [
     id: 3,
     name: "Ciudad Obregón",
     capital: "Ciudad Obregón",
-    confirmed: 5,
+    confirmed: 6,
     deaths: 0,
     compromised: 0,
     status: null,
@@ -68,7 +68,7 @@ const data = [
     id: 5,
     name: "San Luis Rio Colorado",
     capital: "San Luis Rio Colorado",
-    confirmed: 3,
+    confirmed: 4,
     deaths: 0,
     compromised: 0,
     status: null,
@@ -218,6 +218,19 @@ const data = [
     coord: {
       lat: 31.104,
       lng: -111.3788,
+    },
+  },
+  {
+    id: 17,
+    name: "Opodepe",
+    capital: "Opodepe",
+    confirmed: 1,
+    deaths: 0,
+    compromised: 0,
+    status: null,
+    coord: {
+      lat: 29.9262,
+      lng: -110.6269,
     },
   },
 ];

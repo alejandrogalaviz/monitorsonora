@@ -9,11 +9,11 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 33,
-    deaths: 1,
-    suspicious: 114,
-    negatives: 227,
-    recoveries: 2,
+    confirmed: 36,
+    deaths: 4,
+    suspicious: 67,
+    negatives: 288,
+    recoveries: 4,
     tests: 374,
   };
 
