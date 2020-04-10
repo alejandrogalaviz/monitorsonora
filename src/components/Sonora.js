@@ -9,12 +9,12 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 48,
-    deaths: 5,
+    confirmed: 55,
+    deaths: 8,
     // suspicious: 67,
-    negatives: 419,
-    recoveries: 4,
-    tests: 467,
+    negatives: 445,
+    recoveries: 5,
+    tests: 500,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
