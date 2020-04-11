@@ -19,8 +19,8 @@ export default function Footer() {
               name: "EMAIL",
               placeholder: "Email",
               type: "email",
-              required: true
-            }
+              required: true,
+            },
           ]}
           // Change predetermined language
           messages={{
@@ -30,7 +30,7 @@ export default function Footer() {
             error: "Ha ocurrido un error. Por favor intenta más tarde.",
             empty: "Ingresa tu correo electrónico",
             duplicate: "Este correo electrónico ya está registrado",
-            button: "Regístrate"
+            button: "Regístrate",
           }}
           className="mailchimp-custom-form"
         />
@@ -40,7 +40,7 @@ export default function Footer() {
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="monitorsonoramx"
-          options={{ height: 500 }}
+          options={{ height: 500, tweetLimit: 8 }}
           noHeader
           noFooter
           theme="dark"
