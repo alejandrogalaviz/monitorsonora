@@ -9,7 +9,7 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 86,
+    confirmed: 88,
     deaths: 12,
     // suspicious: 67,
     negatives: 494,
@@ -18,12 +18,13 @@ export default function Sonora() {
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
+  var mortality = (dataTotals.deaths / dataTotals.confirmed) * 100;
 
   return (
     <>
       <p>
         <small>
-          Última actualización: 12.04 | 08:45pm | Fuente:{" "}
+          Última actualización: 13.04 | 08:45pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
@@ -55,6 +56,10 @@ export default function Sonora() {
         <StatBlock>
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos : Pruebas</h3>
+        </StatBlock>
+        <StatBlock className="danger">
+          <p>{mortality.toFixed(2)}% </p>
+          <h3>Tasa de Mortalidad</h3>
         </StatBlock>
       </StatGrid>
       <br />
