@@ -68,7 +68,7 @@ const data = [
     id: 5,
     name: "San Luis Rio Colorado",
     capital: "San Luis Rio Colorado",
-    confirmed: 41,
+    confirmed: 49,
     deaths: 0,
     compromised: 0,
     status: null,

@@ -9,12 +9,12 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 109,
-    deaths: 12,
+    confirmed: 117,
+    deaths: 14,
     // suspicious: 67,
-    negatives: 569,
+    negatives: 571,
     recoveries: 6,
-    tests: 678,
+    tests: 680,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -24,7 +24,7 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 16.04 | 10:45pm | Fuente:{" "}
+          Última actualización: 16.04 | 8:55pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
@@ -41,10 +41,7 @@ export default function Sonora() {
           <p>{dataTotals.suspicious}</p>
           <h3>Sospecha</h3>
         </StatBlock> */}
-        <StatBlock>
-          <p>{dataTotals.negatives}</p>
-          <h3>Descartados</h3>
-        </StatBlock>
+
         <StatBlock>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
@@ -52,6 +49,10 @@ export default function Sonora() {
         <StatBlock>
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
+        </StatBlock>
+        <StatBlock>
+          <p>{dataTotals.negatives}</p>
+          <h3>Descartados</h3>
         </StatBlock>
         <StatBlock>
           <p>{result.toFixed(2)}% </p>
