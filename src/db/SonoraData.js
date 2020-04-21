@@ -55,7 +55,7 @@ const data = [
     id: 4,
     name: "Nogales",
     capital: "Nogales",
-    confirmed: 2,
+    confirmed: 5,
     deaths: 0,
     compromised: 0,
     status: null,
@@ -68,7 +68,7 @@ const data = [
     id: 5,
     name: "San Luis Rio Colorado",
     capital: "San Luis Rio Colorado",
-    confirmed: 73,
+    confirmed: 74,
     deaths: 0,
     compromised: 0,
     status: null,
@@ -231,6 +231,19 @@ const data = [
     coord: {
       lat: 29.9262,
       lng: -110.6269,
+    },
+  },
+  {
+    id: 18,
+    name: "Sonoyta",
+    capital: "Sonoyta",
+    confirmed: 1,
+    deaths: 0,
+    compromised: 0,
+    status: null,
+    coord: {
+      lat: 31.8647,
+      lng: -112.852,
     },
   },
 ];

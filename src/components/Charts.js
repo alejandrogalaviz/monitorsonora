@@ -81,6 +81,7 @@ const confirmed = {
         7,
         9,
         19,
+        5,
       ],
     },
   ],
@@ -172,6 +173,7 @@ const accumulated = {
         124,
         133,
         152,
+        157,
       ],
     },
   ],
@@ -263,7 +265,7 @@ const data = {
   ],
   datasets: [
     {
-      data: [11, 112, 7, 6, 16],
+      data: [11, 112, 7, 6, 17],
       borderColor: "hsla(164, 23%, 3%, 0.6)",
       backgroundColor: [
         "hsla(163, 72%, 100%, 0.9)",
