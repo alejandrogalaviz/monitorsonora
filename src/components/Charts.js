@@ -83,6 +83,7 @@ const confirmed = {
         19,
         5,
         8,
+        17,
       ],
     },
   ],
@@ -176,6 +177,7 @@ const accumulated = {
         152,
         157,
         165,
+        182,
       ],
     },
   ],
@@ -259,15 +261,15 @@ export function ConfirmedByProvinceChart() {
 
 const data = {
   labels: [
-    "Recuperados 7.273%",
-    "Estables/Domicilio - 75.152%",
-    "Estables/Hospital - 3.030%",
-    "Graves/Hospital - 4.242%",
-    "Fallecidos - 10.303%",
+    "Recuperados 7.143%",
+    "Estables/Domicilio - 75.824%",
+    "Estables/Hospital - 1.099%",
+    "Graves/Hospital - 3.846%",
+    "Fallecidos - 12.088%",
   ],
   datasets: [
     {
-      data: [12, 124, 5, 7, 17],
+      data: [13, 138, 2, 7, 22],
       borderColor: "hsla(164, 23%, 3%, 0.6)",
       backgroundColor: [
         "hsla(163, 72%, 100%, 0.9)",
