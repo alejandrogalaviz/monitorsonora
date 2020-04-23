@@ -1,6 +1,6 @@
-import React from 'react';
-import useStats from '../hooks/useStats';
-import { StatGrid, StatBlock } from '../components/StyledStats';
+import React from "react";
+import useStats from "../hooks/useStats";
+import { StatGrid, StatBlock } from "../components/StyledStats";
 
 export default function Stats({ url }) {
   const nf = Intl.NumberFormat();
@@ -15,11 +15,11 @@ export default function Stats({ url }) {
         </small>
       </p>
       <StatGrid>
-        <StatBlock>
+        <StatBlock className="warning">
           <p>{nf.format(stats.confirmed.value)}</p>
           <h3>Confirmados</h3>
         </StatBlock>
-        <StatBlock>
+        <StatBlock className="danger">
           <p>{nf.format(stats.deaths.value)}</p>
           <h3>Decesos</h3>
         </StatBlock>
