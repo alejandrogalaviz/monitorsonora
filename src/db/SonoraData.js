@@ -16,7 +16,7 @@ const data = [
     id: 1,
     name: "Guaymas",
     capital: "Guaymas",
-    confirmed: 5,
+    confirmed: 4,
     deaths: 0,
     compromised: 0,
     status: null,

@@ -9,7 +9,7 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 182,
+    confirmed: 181,
     deaths: 22,
     // suspicious: 67,
     negatives: 705,
