@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StatGrid = styled.section`
   display: flex;
@@ -69,7 +69,8 @@ export const Row = styled.li`
     color: var(--color-warning);
   }
   :nth-of-type(3),
-  :nth-of-type(4) {
+  :nth-of-type(4),
+  :nth-of-type(5) {
     color: var(--color-yellow);
   }
   @media (max-width: 960px) {

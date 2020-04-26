@@ -3,18 +3,18 @@ import Map from "./MapGL";
 import { useWindowSize } from "../hooks/useWindowSize";
 
 const SM_SCREEN_SIZE = 768;
-const LG_SCREEN_SIZE = 1200;
+const LG_SCREEN_SIZE = 1500;
 const MONITOR_SM_SIZE = "small";
 const MONITOR_MD_SIZE = "medium";
 const MONITOR_LG_SIZE = "large";
 
 const zooms = {
-  [MONITOR_SM_SIZE]: 5.6,
+  [MONITOR_SM_SIZE]: 5.2,
   [MONITOR_MD_SIZE]: 5.8,
-  [MONITOR_LG_SIZE]: 6.2
+  [MONITOR_LG_SIZE]: 6.2,
 };
 
-const getSizeScreen = width => {
+const getSizeScreen = (width) => {
   if (width <= SM_SCREEN_SIZE) {
     return MONITOR_SM_SIZE;
   }
@@ -34,8 +34,8 @@ export default function MapChart() {
   return (
     <>
       <Map
-        lat={29.29}
-        lng={-110.33}
+        lat={29.59}
+        lng={-111.33}
         z={zooms[size]}
         isSmallSize={isSmallSize}
       />
