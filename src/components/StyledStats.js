@@ -71,7 +71,8 @@ export const Row = styled.li`
   :nth-of-type(3),
   :nth-of-type(4),
   :nth-of-type(5),
-  :nth-of-type(6) {
+  :nth-of-type(6),
+  :nth-of-type(7) {
     color: var(--color-yellow);
   }
   @media (max-width: 960px) {
