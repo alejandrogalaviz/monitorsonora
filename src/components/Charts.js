@@ -285,7 +285,7 @@ const data = {
   ],
   datasets: [
     {
-      data: [43, 195, 6, 10, 34],
+      data: [44, 206, 10, 11, 34],
       borderColor: "hsla(164, 23%, 3%, 0.6)",
       backgroundColor: [
         "hsla(163, 72%, 100%, 0.9)",
