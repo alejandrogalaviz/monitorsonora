@@ -9,12 +9,12 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 320,
+    confirmed: 335,
     deaths: 35,
     // suspicious: 67,
-    negatives: 1057,
-    recoveries: 48,
-    tests: 1377,
+    negatives: 1079,
+    recoveries: 60,
+    tests: 1414,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -24,7 +24,7 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 01.05 | 08:55pm | Fuente:{" "}
+          Última actualización: 02.05 | 08:55pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
