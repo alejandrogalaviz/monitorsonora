@@ -9,22 +9,23 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 392,
-    deaths: 41,
+    confirmed: 451,
+    deaths: 44,
     // suspicious: 67,
-    negatives: 1161,
+    negatives: 1174,
     recoveries: 61,
-    tests: 1553,
+    tests: 1625,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
   var mortality = (dataTotals.deaths / dataTotals.confirmed) * 100;
+  var active = dataTotals.confirmed - dataTotals.deaths - dataTotals.recoveries;
 
   return (
     <>
       <p>
         <small>
-          Última actualización: 04.05 | 09:20pm | Fuente:{" "}
+          Última actualización: 06.05 | 09:20pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
@@ -32,6 +33,10 @@ export default function Sonora() {
         <StatBlock className="warning">
           <p>{dataTotals.confirmed}</p>
           <h3>Confirmados</h3>
+        </StatBlock>
+        <StatBlock style={{ color: "#fffc57" }}>
+          <p>{active}</p>
+          <h3>Casos Activos</h3>
         </StatBlock>
         <StatBlock className="danger">
           <p>{dataTotals.deaths}</p>

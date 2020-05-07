@@ -62,14 +62,15 @@ export const Row = styled.li`
   align-items: center;
   color: var(--color-primary);
 
-  :first-of-type {
+  :first-of-type,
+  :nth-of-type(2) {
     color: var(--color-danger);
   }
-  :nth-of-type(2) {
+  :nth-of-type(3),
+  :nth-of-type(4) {
     color: var(--color-warning);
   }
-  :nth-of-type(3),
-  :nth-of-type(4),
+
   :nth-of-type(5),
   :nth-of-type(6),
   :nth-of-type(7) {
