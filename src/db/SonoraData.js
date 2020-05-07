@@ -40,8 +40,8 @@ const data = [
   },
   {
     id: 3,
-    name: "Ciudad Obregón",
-    capital: "Ciudad Obregón",
+    name: "Cajeme",
+    capital: "Cajeme",
     confirmed: 38,
     deaths: 2,
     compromised: 0,
@@ -235,8 +235,8 @@ const data = [
   },
   {
     id: 18,
-    name: "Sonoyta",
-    capital: "Sonoyta",
+    name: "General Plutarco Elías Calles",
+    capital: "General Plutarco Elías Calles",
     confirmed: 1,
     deaths: 0,
     compromised: 0,

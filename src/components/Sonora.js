@@ -42,38 +42,31 @@ export default function Sonora() {
         </StatBlock>
         <StatBlock className="danger">
           <p style={{ fontSize: "initial" }}>+3</p>
-
           <p>{dataTotals.deaths}</p>
           <h3>Decesos</h3>
         </StatBlock>
-
         <StatBlock>
           <p style={{ fontSize: "initial" }}>+0</p>
-
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
         <StatBlock>
           <p style={{ fontSize: "initial" }}>+72</p>
-
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
         </StatBlock>
         <StatBlock>
           <p style={{ fontSize: "initial" }}>+13</p>
-
           <p>{dataTotals.negatives}</p>
           <h3>Descartados</h3>
         </StatBlock>
         <StatBlock>
           <p style={{ fontSize: "initial" }}>+2.5085%</p>
-
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos/Pruebas</h3>
         </StatBlock>
         <StatBlock className="danger">
           <p style={{ fontSize: "initial" }}>-0.7030%</p>
-
           <p>{mortality.toFixed(2)}% </p>
           <h3>Tasa de Mortalidad</h3>
         </StatBlock>
