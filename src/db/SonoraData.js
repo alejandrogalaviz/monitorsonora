@@ -159,7 +159,7 @@ const data = [
     id: 12,
     name: "Cananea",
     capital: "Cananea",
-    confirmed: 0,
+    confirmed: 4,
     deaths: 0,
     compromised: 0,
     status: null,
@@ -274,19 +274,6 @@ const data = [
   },
   {
     id: 21,
-    name: "Cananea",
-    capital: "Cananea",
-    confirmed: 4,
-    deaths: 0,
-    compromised: 0,
-    status: null,
-    coord: {
-      lat: 30.9898,
-      lng: -110.2892,
-    },
-  },
-  {
-    id: 22,
     name: "Cumpas",
     capital: "Cumpas",
     confirmed: 1,
