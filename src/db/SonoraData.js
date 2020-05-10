@@ -3,8 +3,8 @@ const data = [
     id: 0,
     name: "Hermosillo",
     capital: "Hermosillo",
-    confirmed: 156,
-    deaths: 4,
+    confirmed: 165,
+    deaths: 5,
     compromised: 0,
     status: "alert",
     coord: {
@@ -42,8 +42,8 @@ const data = [
     id: 3,
     name: "Cajeme",
     capital: "Cajeme",
-    confirmed: 46,
-    deaths: 2,
+    confirmed: 49,
+    deaths: 3,
     compromised: 0,
     status: "warning",
     coord: {
@@ -55,7 +55,7 @@ const data = [
     id: 4,
     name: "Nogales",
     capital: "Nogales",
-    confirmed: 42,
+    confirmed: 45,
     deaths: 5,
     compromised: 0,
     status: "warning",
@@ -235,8 +235,8 @@ const data = [
   },
   {
     id: 18,
-    name: "General Plutarco Elías Calles",
-    capital: "General Plutarco Elías Calles",
+    name: "GPEC",
+    capital: "GPEC",
     confirmed: 1,
     deaths: 0,
     compromised: 0,
@@ -296,6 +296,19 @@ const data = [
     coord: {
       lat: 30.5406,
       lng: -111.1205,
+    },
+  },
+  {
+    id: 24,
+    name: "Altar",
+    capital: "Altar",
+    confirmed: 1,
+    deaths: 0,
+    compromised: 0,
+    status: null,
+    coord: {
+      lat: 30.71626,
+      lng: -111.83653,
     },
   },
 ];
