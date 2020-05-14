@@ -11,7 +11,7 @@ const Navigation = styled.nav`
   margin: 0.5rem 0;
   padding: 0.1rem 0.3rem;
   border-radius: 2px;
-  text-align: right;
+  text-align: left;
 
   > a {
     display: inline-block;
