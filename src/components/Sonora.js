@@ -9,12 +9,12 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 686,
-    deaths: 55,
+    confirmed: 744,
+    deaths: 58,
     // suspicious: 67,
-    negatives: 1446,
-    recoveries: 91,
-    tests: 2132,
+    negatives: 1545,
+    recoveries: 92,
+    tests: 2289,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -25,48 +25,48 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 12.05 | 09:00pm | Fuente:{" "}
+          Última actualización: 13.05 | 09:20pm | Fuente:{" "}
           <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
         </small>
       </p>
       <StatGrid>
         <StatBlock className="warning">
-          <p style={{ fontSize: "initial" }}>+44</p>
+          <p style={{ fontSize: "initial" }}>+58</p>
           <p>{dataTotals.confirmed}</p>
           <h3>Confirmados</h3>
         </StatBlock>
         <StatBlock style={{ color: "#fffc57" }}>
-          <p style={{ fontSize: "initial" }}>+30</p>
+          <p style={{ fontSize: "initial" }}>+54</p>
           <p>{active}</p>
           <h3>Activos</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p style={{ fontSize: "initial" }}>+2</p>
+          <p style={{ fontSize: "initial" }}>+3</p>
           <p>{dataTotals.deaths}</p>
           <h3>Decesos</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+12</p>
+          <p style={{ fontSize: "initial" }}>+1</p>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+123</p>
+          <p style={{ fontSize: "initial" }}>+157</p>
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+79</p>
+          <p style={{ fontSize: "initial" }}>+99</p>
           <p>{dataTotals.negatives}</p>
           <h3>Descartados</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+0.22%</p>
+          <p style={{ fontSize: "initial" }}>+0.32%</p>
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos/Pruebas</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p style={{ fontSize: "initial" }}>-0.24%</p>
+          <p style={{ fontSize: "initial" }}>-0.22%</p>
           <p>{mortality.toFixed(2)}% </p>
           <h3>Tasa de Mortalidad</h3>
         </StatBlock>
