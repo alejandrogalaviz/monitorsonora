@@ -12,7 +12,13 @@ export default function Footer() {
       <br />
       <br />
       <a href="https://github.com/alejandrogalaviz/covid19-monitor-sonora">
-        Código Abierto
+        Código abierto
+      </a>
+      <a
+        style={{ float: "right" }}
+        href="https://github.com/alejandrogalaviz/covid19-monitor-sonora"
+      >
+        Datos abiertos
       </a>
     </footer>
   );

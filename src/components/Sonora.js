@@ -26,7 +26,7 @@ export default function Sonora() {
       <p>
         <small>
           Última actualización: 14.05 | 09:10pm | Fuente:{" "}
-          <a href="https://www.gob.mx/salud/">SECRETARÍA DE SALUD DE MÉXICO</a>
+          <a href="http://saludsonora.gob.mx/">SECRETARÍA DE SALUD SONORA</a>
         </small>
       </p>
       <StatGrid>
