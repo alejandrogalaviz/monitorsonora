@@ -171,14 +171,14 @@ export const GlobalStyle = createGlobalStyle`
     .warning {
       color: var(--color-warning);
     }
-    .cuation{
-      color:var(--color-yellow)
+    .caution{
+      color: var(--color-yellow);
     }
     .float-right{
-      float:right
+      float:right;
     }
     .font-small{
-      font-size:initial
+      font-size:initial;
     }
 
     @media (max-width: 960px) {
@@ -220,5 +220,12 @@ export const GlobalStyle = createGlobalStyle`
       filter: contrast(1) brightness(1.2) saturate(1.3);
       opacity: 1;
     }
+  }
+
+  .cards-container{
+    padding:50px 20px 0;
+  }
+  .card{
+    margin-bottom:27px;
   }
 `;

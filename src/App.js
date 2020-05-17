@@ -9,6 +9,7 @@ import {
 } from "../src/components/Charts";
 import { GlobalStyle } from "../src/components/GlobalStyle";
 import DataPanel from "../src/components/DataPanel";
+// import Noticias from "../src/components/Noticias";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <ConfirmedByProvinceChart path="/contagios-municipio" />
             <AccumulatedChart path="/casos-totales" />
             <DetailsChart path="/detalles" />
+            {/* <Noticias path="/noticias" /> */}
           </Router>
         </section>
       </main>

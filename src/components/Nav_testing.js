@@ -66,16 +66,16 @@ export default function Nav() {
       <Link to="detalles" getProps={isActive}>
         Detalle
       </Link>
-      {/* <Link to="noticias" getProps={isActive}>
+      <Link to="noticias" getProps={isActive}>
         Noticias
-      </Link> */}
-      <a
+      </Link>
+      {/* <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://noticias.monitorsonora.com/"
       >
         Noticias
-      </a>
+      </a> */}
     </Navigation>
   );
 }
