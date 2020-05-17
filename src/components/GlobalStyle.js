@@ -223,7 +223,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .cards-container{
-    padding:50px 20px 0;
+    padding:1rem;
   }
   .card{
     margin-bottom:27px;
