@@ -101,7 +101,9 @@ export const GlobalStyle = createGlobalStyle`
 
     @media(max-width: 960px) {
       padding: 0;
+      height:unset;
     }
+    
 
     > section {
       position: relative;
@@ -122,6 +124,11 @@ export const GlobalStyle = createGlobalStyle`
       :last-of-type {
         padding: 0;
         overflow: hidden;
+
+      @media(max-width: 960px) {
+        height:50vh;
+      }
+
 
         > section {
           padding:0.2rem
@@ -163,6 +170,15 @@ export const GlobalStyle = createGlobalStyle`
 
     .warning {
       color: var(--color-warning);
+    }
+    .cuation{
+      color:var(--color-yellow)
+    }
+    .float-right{
+      float:right
+    }
+    .font-small{
+      font-size:initial
     }
 
     @media (max-width: 960px) {

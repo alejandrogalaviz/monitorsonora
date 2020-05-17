@@ -31,42 +31,42 @@ export default function Sonora() {
       </p>
       <StatGrid>
         <StatBlock className="warning">
-          <p style={{ fontSize: "initial" }}>+66</p>
+          <p className="font-small">+66</p>
           <p>{dataTotals.confirmed}</p>
           <h3>Confirmados</h3>
         </StatBlock>
-        <StatBlock style={{ color: "#fffc57" }}>
-          <p style={{ fontSize: "initial" }}>+48</p>
+        <StatBlock className="caution">
+          <p className="font-small">+48</p>
           <p>{active}</p>
           <h3>Activos</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p style={{ fontSize: "initial" }}>+4</p>
+          <p className="font-small">+4</p>
           <p>{dataTotals.deaths}</p>
           <h3>Decesos</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+14</p>
+          <p className="font-small">+14</p>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+137</p>
+          <p className="font-small">+137</p>
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+71</p>
+          <p className="font-small">+71</p>
           <p>{dataTotals.negatives}</p>
           <h3>Descartados</h3>
         </StatBlock>
         <StatBlock>
-          <p style={{ fontSize: "initial" }}>+0.79%</p>
+          <p className="font-small">+0.79%</p>
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos/Pruebas</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p style={{ fontSize: "initial" }}>-0.14%</p>
+          <p className="font-small">-0.14%</p>
           <p>{mortality.toFixed(2)}% </p>
           <h3>Tasa de Mortalidad</h3>
         </StatBlock>

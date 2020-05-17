@@ -15,7 +15,7 @@ export default function Footer() {
         Código abierto
       </a>
       <a
-        style={{ float: "right" }}
+        className="float-right"
         href="https://github.com/alejandrogalaviz/covid19-monitor-sonora"
       >
         Datos abiertos

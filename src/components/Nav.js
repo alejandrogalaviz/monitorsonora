@@ -70,7 +70,6 @@ export default function Nav() {
         target="_blank"
         rel="noopener noreferrer"
         href="https://noticias.monitorsonora.com/"
-        // style={{ background: "#fffc57", color: "#212431" }}
       >
         Noticias
       </a>
