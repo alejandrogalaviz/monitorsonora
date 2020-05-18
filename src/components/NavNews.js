@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "@reach/router";
 
-const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: "active" } : {};
-};
-
 const Navigation = styled.nav`
   background-color: var(--color-black);
   margin: 0.5rem 0;
@@ -52,22 +48,12 @@ export default class Nav extends Component {
   render() {
     return (
       <Navigation>
-        <Link to="/" getProps={isActive}>
-          Mapa
-        </Link>
-        <Link to="contagios-municipio" getProps={isActive}>
-          Municipios
-        </Link>
-        <Link to="contagios" getProps={isActive}>
-          Diario
-        </Link>
-        <Link to="casos-totales" getProps={isActive}>
-          Total
-        </Link>
-        <Link to="detalles" getProps={isActive}>
-          Detalle
-        </Link>
-        <Link to="noticias" getProps={isActive}>
+        <Link to="/">Mapa</Link>
+        <Link to="/contagios-municipio">Municipios</Link>
+        <Link to="/contagios">Diario</Link>
+        <Link to="/casos-totales">Total</Link>
+        <Link to="/detalles">Detalle</Link>
+        <Link to="/noticias" className="active">
           Noticias
         </Link>
         {/* <a

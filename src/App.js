@@ -9,7 +9,7 @@ import {
 } from "../src/components/Charts";
 import { GlobalStyle } from "../src/components/GlobalStyle";
 import DataPanel from "../src/components/DataPanel";
-// import Noticias from "../src/components/Noticias";
+import Noticias from "../src/components/Noticias";
 
 export default function App() {
   return (

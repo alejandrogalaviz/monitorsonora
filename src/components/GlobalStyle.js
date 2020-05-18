@@ -123,7 +123,7 @@ export const GlobalStyle = createGlobalStyle`
 
       :last-of-type {
         padding: 0;
-        overflow: hidden;
+        overflow-y: scroll;
 
       @media(max-width: 960px) {
         height:50vh;
@@ -221,11 +221,97 @@ export const GlobalStyle = createGlobalStyle`
       opacity: 1;
     }
   }
+  .news-logo{
+    width:28px;
+    float:right;
+  }
+  .news-heading{
+    margin-bottom:20px;
+    display:inline-block;
+  }
 
   .cards-container{
     padding:1rem;
   }
   .card{
     margin-bottom:27px;
+    display: flex;
+
+    @media(max-width: 960px) {
+      box-shadow: 0 1px 1px hsla(163,72%,0%,0.7),0 -1px 0 var(--color-black);
+      border: 1px solid var(--color-black);
+      border-radius: 2px;
+      padding: 5px 2px 10px;
+    }
+  }
+  .card-content{
+    margin-left:1rem;
+
+    @media(max-width:960px){
+      margin-left:0.5rem;
+    }
+
+    >h3{
+      margin-bottom:5px;
+      @media(max-width: 960px) {
+        line-height: 14px;
+      }
+    }
+  }
+  .card-title{
+    font-size:15px;
+    text-decoration:none;
+    font-weight:600;
+    margin-bottom:5px;
+    @media(max-width:960px){
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height:18px;
+    }
+  }
+  .card-title:hover{
+    text-decoration:underline;
+  }
+  .card-source{
+    font-size:13px;
+    color: #dbfff7;
+    margin-bottom:5px;
+  }
+  .card-description{
+    font-size:13px;
+    color: #dbfff7
+  }
+  @media(max-width:960px){
+    .card-description{
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height:18px;
+    }
+  } 
+
+  .share-button-2{
+    background-image: url("share-button.png");
+    width:20px;
+    height:20px;
+    float:right;
+    margin-top:10px;
+    margin-right:5px;
+    background-size:cover;
+    cursor:pointer;
+  }
+  .share-button-3{
+    background-image: url("share-button.png");
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 18px;
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 35px;
+
   }
 `;
