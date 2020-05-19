@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import Nav from "./NavNews";
 import Footer from "./Footer";
 import { Link } from "@reach/router";
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  WhatsappShareButton,
-} from "react-share";
-import { FacebookIcon, TwitterIcon, WhatsappIcon } from "react-share";
+import Share from "./Share";
 
 class Noticias extends Component {
   componentDidMount() {
     this.props.openNews();
+    fetch(
+      "https://noticias.monitorsonora.com/index.php?module=blog&json=entries"
+    )
+      .then((response) => response.json())
+      .then((json) => console.log(json));
   }
   componentWillUnmount() {
     this.props.closeNews();
@@ -36,7 +36,6 @@ class Noticias extends Component {
                 className="card-img"
               />
             </a>
-            {/* <div className="share-button-3"></div> */}
           </div>
           <div className="card-content">
             <h3>
@@ -53,16 +52,7 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
-            <FacebookShareButton url={"https://monitorsonora.com"}>
-              <FacebookIcon size={32} round={true}></FacebookIcon>
-            </FacebookShareButton>
-            <TwitterShareButton url={"https://monitorsonora.com"}>
-              <TwitterIcon size={32} round={true}></TwitterIcon>
-            </TwitterShareButton>
-            <WhatsappShareButton url={"https://monitorsonora.com"}>
-              <WhatsappIcon size={32} round={true}></WhatsappIcon>
-            </WhatsappShareButton>
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -90,7 +80,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -118,7 +109,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -146,7 +138,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -174,7 +167,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -202,7 +196,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -230,7 +225,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="card">
@@ -258,7 +254,8 @@ class Noticias extends Component {
               consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
               fu ...
             </p>
-            <div className="share-button-2"></div>
+
+            <Share />
           </div>
         </div>
         <div className="hide-desktop">

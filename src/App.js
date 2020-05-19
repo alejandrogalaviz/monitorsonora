@@ -24,7 +24,7 @@ export default function App() {
             <ConfirmedByProvinceChart path="/contagios-municipio" />
             <AccumulatedChart path="/casos-totales" />
             <DetailsChart path="/detalles" />
-            {/* <Noticias path="/noticias" /> */}
+            <Noticias path="/noticias" />
           </Router>
         </section>
       </main>
