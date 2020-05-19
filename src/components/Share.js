@@ -14,20 +14,29 @@ export default class Share extends Component {
       <nav className="nav hide-desktop">
         <ul className="nav__menu">
           <li className="nav__menu-item">
-            <a></a>
             <ul className="nav__submenu">
               <li className="nav__submenu-item ">
-                <FacebookShareButton url={"https://monitorsonora.com"}>
+                <FacebookShareButton
+                  quote={this.props.title}
+                  url={this.props.url}
+                >
                   <FacebookIcon size={32} round={true} />
                 </FacebookShareButton>
               </li>
               <li className="nav__submenu-item ">
-                <TwitterShareButton url={"https://monitorsonora.com"}>
+                <TwitterShareButton
+                  title={this.props.title}
+                  url={this.props.url}
+                  via={"monitorsonoramx"}
+                >
                   <TwitterIcon size={32} round={true} />
                 </TwitterShareButton>
               </li>
               <li className="nav__submenu-item ">
-                <WhatsappShareButton url={"https://monitorsonora.com"}>
+                <WhatsappShareButton
+                  title={"Mira esta nota: " + this.props.title}
+                  url={this.props.url}
+                >
                   <WhatsappIcon size={32} round={true} />
                 </WhatsappShareButton>
               </li>

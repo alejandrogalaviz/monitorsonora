@@ -32,7 +32,7 @@ const data = [
     confirmed: 40,
     deaths: 3,
     compromised: 0,
-    status: null,
+    status: "caution",
     coord: {
       lat: 27.0728,
       lng: -109.4437,
@@ -110,7 +110,7 @@ const data = [
     confirmed: 18,
     deaths: 3,
     compromised: 0,
-    status: "caution",
+    status: null,
     coord: {
       lat: 26.8271,
       lng: -109.6419,

@@ -24,6 +24,30 @@ class Noticias extends Component {
   }
 
   render() {
+    let noticias = this.state.news.map((noticia, i) => {
+      return (
+        <div className="card" key={i}>
+          <div className="card-img-cont">
+            <a href={noticia.a_type.id}>
+              <img src={noticia.image} alt="" className="card-img" />
+            </a>
+          </div>
+          <div className="card-content">
+            <h3>
+              <a className="card-title" href={noticia.a_type.id}>
+                {noticia.title}
+              </a>
+            </h3>
+            <p className="card-source">
+              <span className="caution">{noticia.a_type.domain}</span> -{" "}
+              {noticia.date}
+            </p>
+            <p className="card-description">{noticia.description}</p>
+            <Share title={noticia.title} url={noticia.a_type.id} />
+          </div>
+        </div>
+      );
+    });
     return (
       <div className="cards-container">
         <h1 className="news-heading">Noticias COVID-19/SARS-CoV-2</h1>
@@ -33,34 +57,7 @@ class Noticias extends Component {
         <div className="hide-desktop">
           <Nav />
         </div>
-        <div className="card">
-          <div className="card-img-cont">
-            <a href="#">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8nd6DZLOJ2RirhLLCKhlM9moJr072MFzsBlmn_wquAWXYaBh_reYpxvDRQzM0wp3UG4rOGUdA&s"
-                alt=""
-                className="card-img"
-              />
-            </a>
-          </div>
-          <div className="card-content">
-            <h3>
-              <a className="card-title" href="#">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reicien...
-              </a>
-            </h3>
-            <p className="card-source">
-              <span className="caution">CNN</span> - Hace 4 horas
-            </p>
-            <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              consectetur debitis dolor sunt harum quo cumque alias ut. Corrupti
-              fu ...
-            </p>
-            <Share />
-          </div>
-        </div>
+        {noticias}
         <div className="hide-desktop">
           <Footer />
         </div>

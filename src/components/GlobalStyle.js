@@ -253,6 +253,7 @@ export const GlobalStyle = createGlobalStyle`
 
     >h3{
       margin-bottom:5px;
+      line-height:18px;
       @media(max-width: 960px) {
         line-height: 14px;
       }
@@ -266,7 +267,7 @@ export const GlobalStyle = createGlobalStyle`
     @media(max-width:960px){
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       line-height:18px;
     }
@@ -287,7 +288,7 @@ export const GlobalStyle = createGlobalStyle`
     .card-description{
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       line-height:18px;
     }
@@ -375,5 +376,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   .nav__submenu-item:hover {
     background: rgba(0, 0, 0, 0.1);
+  }
+  .card-img-cont img{
+    height:100px;
+    width:100px;
+    object-fit:cover;
   }  
 `;
