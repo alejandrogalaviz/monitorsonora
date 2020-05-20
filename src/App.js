@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
-import MapChart from "../src/components/MapChart";
+import MapChart from "./components/MapChart";
 import {
   ConfirmedChart,
   AccumulatedChart,
   ConfirmedByProvinceChart,
   DetailsChart,
-} from "../src/components/Charts";
-import { GlobalStyle } from "../src/components/GlobalStyle";
-import DataPanel from "../src/components/DataPanel";
-import Noticias from "../src/components/Noticias";
+} from "./components/Charts";
+import { GlobalStyle } from "./components/GlobalStyle";
+import DataPanel from "./components/DataPanel_test";
+import Noticias from "./components/Noticias";
 import classnames from "classnames";
 
 export default class App_test extends Component {

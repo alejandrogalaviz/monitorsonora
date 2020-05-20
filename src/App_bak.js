@@ -8,7 +8,7 @@ import {
   DetailsChart,
 } from "../src/components/Charts";
 import { GlobalStyle } from "../src/components/GlobalStyle";
-import DataPanel from "../src/components/DataPanel_test";
+import DataPanel from "../src/components/DataPanel";
 import Noticias from "../src/components/Noticias";
 import classnames from "classnames";
 

@@ -28,13 +28,22 @@ class Noticias extends Component {
       return (
         <div className="card" key={i}>
           <div className="card-img-cont">
-            <a href={noticia.a_type.id}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={noticia.a_type.id}
+            >
               <img src={noticia.image} alt="" className="card-img" />
             </a>
           </div>
           <div className="card-content">
             <h3>
-              <a className="card-title" href={noticia.a_type.id}>
+              <a
+                className="card-title"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={noticia.a_type.id}
+              >
                 {noticia.title}
               </a>
             </h3>
