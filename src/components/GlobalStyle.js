@@ -126,7 +126,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow-y: scroll;
 
       @media(max-width: 960px) {
-        height:50vh;
+        height:64vh;
       }
 
 

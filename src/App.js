@@ -7,6 +7,7 @@ import {
   ConfirmedByProvinceChart,
   DetailsChart,
 } from "./components/Charts";
+// import { DemoChart, DemoChart2 } from "./components/DemoCharts";
 import { GlobalStyle } from "./components/GlobalStyle";
 import DataPanel from "./components/DataPanel_test";
 import Noticias from "./components/Noticias";
@@ -54,6 +55,8 @@ export default class App_test extends Component {
                 closeNews={this.closeNews}
                 path="/noticias"
               />
+              {/* <DemoChart path="/demo" />
+              <DemoChart2 path="/demo2" /> */}
             </Router>
           </section>
         </main>
