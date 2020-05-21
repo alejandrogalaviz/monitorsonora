@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "@reach/router";
 
@@ -48,34 +48,29 @@ const Navigation = styled.nav`
   }
 `;
 
-export default function Nav() {
-  return (
-    <Navigation>
-      <Link to="/" getProps={isActive}>
-        Mapa
-      </Link>
-      <Link to="contagios-municipio" getProps={isActive}>
-        Municipios
-      </Link>
-      <Link to="contagios" getProps={isActive}>
-        Diario
-      </Link>
-      <Link to="casos-totales" getProps={isActive}>
-        Total
-      </Link>
-      <Link to="detalles" getProps={isActive}>
-        Detalle
-      </Link>
-      {/* <Link to="noticias" getProps={isActive}>
-        Noticias
-      </Link> */}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://noticias.monitorsonora.com/"
-      >
-        Noticias
-      </a>
-    </Navigation>
-  );
+export default class Nav extends Component {
+  render() {
+    return (
+      <Navigation>
+        <Link to="/" getProps={isActive}>
+          Mapa
+        </Link>
+        <Link to="contagios-municipio" getProps={isActive}>
+          Municipios
+        </Link>
+        <Link to="contagios" getProps={isActive}>
+          Diario
+        </Link>
+        <Link to="casos-totales" getProps={isActive}>
+          Total
+        </Link>
+        <Link to="detalles" getProps={isActive}>
+          Detalle
+        </Link>
+        <Link to="noticias" getProps={isActive}>
+          Noticias
+        </Link>
+      </Navigation>
+    );
+  }
 }

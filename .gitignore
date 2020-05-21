@@ -22,3 +22,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Testing Files
+/src/components/Footer_bak.js
+/src/components/DemoCharts.js
+/src/App_demos.js

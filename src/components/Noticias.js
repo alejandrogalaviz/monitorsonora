@@ -14,7 +14,7 @@ class Noticias extends Component {
   componentDidMount() {
     this.props.openNews();
     fetch(
-      "https://noticias.monitorsonora.com/index.php?module=blog&json=entries"
+      "https://noticias.monitorsonora.com/index.php?module=blog&json=entries&l1=1&l2=20"
     )
       .then((response) => response.json())
       .then((news) => this.setState({ news: news }));
