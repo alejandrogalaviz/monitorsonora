@@ -24,10 +24,10 @@ const ChartPieSection = styled.div`
   }
 `;
 
-const datesArray = getDates(new Date("05/04/2020"), new Date("05/18/2020"));
+const datesArray = getDates(new Date("05/14/2020"), new Date("05/21/2020"));
 
 const confirmed = {
-  labels: ["04/05/2020", "18/05/2020"],
+  labels: ["14/05/2020", "", "21/05/2020"],
   datasets: [
     {
       label: "Confirmados Diarios",
@@ -42,7 +42,7 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [392, 1037],
+      data: [790, 0, 1274],
     },
   ],
 };
@@ -103,23 +103,7 @@ const accumulated = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [
-        392,
-        392,
-        451,
-        485,
-        534,
-        550,
-        588,
-        642,
-        686,
-        744,
-        790,
-        856,
-        905,
-        981,
-        1037,
-      ],
+      data: [790, 856, 905, 981, 1037, 1110, 1189, 1274],
     },
   ],
 };
