@@ -18,7 +18,7 @@ sortedProvinces.forEach((province) => {
   }
 });
 
-export default function Map({ lat, lng, z }) {
+export function Map({ lat, lng, z }) {
   useEffect(() => {
     setViewport({
       latitude: lat,
@@ -169,3 +169,80 @@ export default function Map({ lat, lng, z }) {
     </ReactMapGL>
   );
 }
+// const sortedProvincesDeaths = provinces.sort((a, b) => {
+//   return b.deaths - a.deaths;
+// });
+
+// let DeathsProvinces = [];
+
+// sortedProvincesDeaths.forEach((province) => {
+//   if (province.deaths > 0) {
+//     DeathsProvinces.push(province);
+//   }
+// });
+
+// export function MapDeaths({ lat, lng, z }) {
+//   useEffect(() => {
+//     setViewport({
+//       latitude: lat,
+//       longitude: lng,
+//       zoom: z,
+//     });
+//   }, [lat, lng, z]);
+
+//   const [viewport, setViewport] = useState({
+//     latitude: lat,
+//     longitude: lng,
+//     zoom: z,
+//   });
+
+//   return (
+//     <ReactMapGL
+//       dragPan={true}
+//       scrollZoom={false}
+//       width="100%"
+//       height="100%"
+//       mapStyle="mapbox://styles/juanmnl/ck7spea0200we1inzkgusnusr"
+//       mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN}
+//       {...viewport}
+//       onViewportChange={setViewport}
+//     >
+//       {DeathsProvinces.map((point) => {
+//         return (
+//           <Marker
+//             key={point.name}
+//             latitude={point.coord.lat}
+//             longitude={point.coord.lng}
+//           >
+//             <svg
+//               className="on"
+//               width="50"
+//               height="50"
+//               viewBox="0 0 50 50"
+//               fill="none"
+//               xmlns="http://www.w3.org/2000/svg"
+//             >
+//               <circle
+//                 cx="25"
+//                 cy="25"
+//                 r="25"
+//                 fill="hsla(0, 100%, 67%, 1)"
+//                 fillOpacity="0.8"
+//               />
+//               <text
+//                 x="25"
+//                 y="29"
+//                 fontFamily="sans-serif"
+//                 fontSize="16"
+//                 fill="black"
+//                 textAnchor="middle"
+//               >
+//                 {point.deaths}
+//               </text>
+//             </svg>
+//           </Marker>
+//         );
+//       })}
+//     </ReactMapGL>
+//   );
+// }

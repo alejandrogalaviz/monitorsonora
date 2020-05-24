@@ -174,8 +174,9 @@ export const GlobalStyle = createGlobalStyle`
     .caution{
       color: var(--color-yellow);
     }
-    .float-right{
+    .open-data{
       float:right;
+      margin-top:3px;
     }
     .font-small{
       font-size:initial;
@@ -381,5 +382,41 @@ export const GlobalStyle = createGlobalStyle`
     height:100px;
     width:100px;
     object-fit:cover;
+  }
+  .facebook-icon{
+    float:right;
+
+    @media (max-width: 960px) {
+      float:unset
+    }
+
+    > img{
+      width:25px;
+      border-radius:5px;
+
+      @media (max-width: 960px) {
+        width:30px;
+      }
+    }
+  }
+  .twitter-icon{
+    float:right;
+
+    @media (max-width: 960px) {
+      float:unset;
+      margin-top: 27px;
+      display: inline-block;
+    }
+
+    > img{
+      width:25px;
+      border-radius:5px;
+      margin-left:10px;
+      @media (max-width: 960px) {
+        width:30px;
+        margin-right:20px;
+        margin-left:0;
+      }
+    }
   }  
 `;
