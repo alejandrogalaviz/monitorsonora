@@ -27,7 +27,7 @@ const ChartPieSection = styled.div`
 const datesArray = getDates(new Date("05/14/2020"), new Date("05/21/2020"));
 
 const confirmed = {
-  labels: ["14/05/2020", "", "21/05/2020"],
+  labels: ["21/05/2020", "", "28/05/2020"],
   datasets: [
     {
       label: "Confirmados Diarios",
@@ -42,7 +42,7 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [790, 0, 1274],
+      data: [1274, 0, 2032],
     },
   ],
 };
