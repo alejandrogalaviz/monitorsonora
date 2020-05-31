@@ -9,11 +9,11 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 2154,
-    deaths: 173,
-    negatives: 2751,
-    recoveries: 299,
-    tests: 4905,
+    confirmed: 2284,
+    deaths: 177,
+    negatives: 2829,
+    recoveries: 324,
+    tests: 5113,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -24,48 +24,48 @@ export default function Sonora() {
     <>
       <p>
         <small>
-          Última actualización: 29.05 | 09:00pm | Fuente:{" "}
+          Última actualización: 30.05 | 09:40pm | Fuente:{" "}
           <a href="http://saludsonora.gob.mx/">SECRETARÍA DE SALUD SONORA</a>
         </small>
       </p>
       <StatGrid>
         <StatBlock className="warning">
-          <p className="font-small">+122</p>
+          <p className="font-small">+130</p>
           <p>{dataTotals.confirmed}</p>
           <h3>Confirmados</h3>
         </StatBlock>
         <StatBlock className="caution">
-          <p className="font-small">+116</p>
+          <p className="font-small">+101</p>
           <p>{active}</p>
           <h3>Activos</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p className="font-small">+6</p>
+          <p className="font-small">+4</p>
           <p>{dataTotals.deaths}</p>
           <h3>Decesos</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+0</p>
+          <p className="font-small">+25</p>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+172</p>
+          <p className="font-small">+208</p>
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+50</p>
+          <p className="font-small">+78</p>
           <p>{dataTotals.negatives}</p>
           <h3>Descartados</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+0.98%</p>
+          <p className="font-small">+0.76%</p>
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos/Pruebas</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p className="font-small">-0.19%</p>
+          <p className="font-small">-0.28%</p>
           <p>{mortality.toFixed(2)}% </p>
           <h3>Tasa de Mortalidad</h3>
         </StatBlock>
