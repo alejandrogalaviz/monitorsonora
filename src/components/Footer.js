@@ -42,12 +42,12 @@ export default function Footer() {
       <a href="https://github.com/alejandrogalaviz/covid19-monitor-sonora">
         Código abierto
       </a>
-      <a
+      {/* <a
         className="open-data"
         href="https://github.com/alejandrogalaviz/covid19-monitor-sonora"
       >
         Datos abiertos
-      </a>
+      </a> */}
     </footer>
   );
 }
