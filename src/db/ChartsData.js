@@ -78,6 +78,7 @@ const recuperados = [
   324,
   334,
   334,
+  334,
 ];
 const decesos = [
   null,
@@ -159,6 +160,7 @@ const decesos = [
   177,
   193,
   204,
+  224,
 ];
 const confirmadosTotal = [
   0,
@@ -240,6 +242,7 @@ const confirmadosTotal = [
   2284,
   2386,
   2561,
+  2704,
 ];
 const confirmadosDiario = [
   0,
@@ -321,15 +324,16 @@ const confirmadosDiario = [
   130,
   102,
   175,
+  143,
 ];
 const proporcionLabels = [
-  "Recuperados 13.042%",
-  "Estables/Domicilio - 68.684%",
-  "Estables/Hospital - 4.490%",
-  "Graves/Hospital - 5.818%",
-  "Fallecidos - 7.966%",
+  "Recuperados 12.352%",
+  "Estables/Domicilio - 69.268%",
+  "Estables/Hospital - 4.031%",
+  "Graves/Hospital - 6.065%",
+  "Fallecidos - 8.284%",
 ];
-const proporcionData = [334, 1769, 115, 149, 204];
+const proporcionData = [334, 1873, 109, 164, 224];
 const chartsData = {
   recuperados,
   decesos,
