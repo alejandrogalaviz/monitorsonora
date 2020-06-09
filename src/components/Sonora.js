@@ -45,7 +45,7 @@ export default function Sonora() {
           <h3>Decesos</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+12</p>
+          <p className="font-small">+2</p>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
