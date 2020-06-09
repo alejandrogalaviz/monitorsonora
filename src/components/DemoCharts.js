@@ -1,5 +1,5 @@
 import React from "react";
-import { Bar, HorizontalBar, Doughnut } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import styled from "styled-components";
 import { getDates } from "../utils/dateUtils";
 
@@ -11,23 +11,10 @@ const ChartSection = styled.div`
   position: relative;
 `;
 
-const ChartPieSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0 1rem;
-
-  @media (max-width: 960px) {
-    padding: 0 1rem 0.4rem;
-  }
-`;
-
 const datesArray = getDates(new Date("05/14/2020"), new Date("05/21/2020"));
 
 const confirmed = {
-  labels: ["28/05/2020", "", "04/06/2020"],
+  labels: ["31/05/2020", "", "07/06/2020"],
   datasets: [
     {
       label: "Confirmados Diarios",
@@ -42,7 +29,7 @@ const confirmed = {
       pointStyle: "mitter",
       showLines: false,
       lineTension: 0.3,
-      data: [2032, 0, 3042],
+      data: [2386, 0, 3494],
     },
   ],
 };

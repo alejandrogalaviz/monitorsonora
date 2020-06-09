@@ -1,5 +1,5 @@
 import React from "react";
-import { Map, MapDeaths } from "./MapGL";
+import { Map } from "./MapGL";
 import { useWindowSize } from "../hooks/useWindowSize";
 import { Helmet } from "react-helmet";
 
