@@ -9,7 +9,7 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 4241,
+    confirmed: 5241,
     deaths: 467,
     negatives: 4088,
     recoveries: 529,
