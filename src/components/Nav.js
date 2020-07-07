@@ -70,6 +70,13 @@ export default class Nav extends Component {
         <Link to="noticias" getProps={isActive}>
           Noticias
         </Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://blog.monitorsonora.com/"
+        >
+          Blog
+        </a>
       </Navigation>
     );
   }

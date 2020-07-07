@@ -56,13 +56,13 @@ export default class Nav extends Component {
         <Link to="/noticias" className="active">
           Noticias
         </Link>
-        {/* <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://noticias.monitorsonora.com/"
-      >
-        Noticias
-      </a> */}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://blog.monitorsonora.com/"
+        >
+          Blog
+        </a>
       </Navigation>
     );
   }
