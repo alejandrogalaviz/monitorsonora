@@ -9,11 +9,11 @@ export default function Sonora() {
   });
 
   const dataTotals = {
-    confirmed: 15381,
-    deaths: 1494,
-    negatives: 7262,
-    recoveries: 2315,
-    tests: 22643,
+    confirmed: 15676,
+    deaths: 1524,
+    negatives: 7380,
+    recoveries: 2605,
+    tests: 23056,
   };
 
   var result = (dataTotals.confirmed / dataTotals.tests) * 100;
@@ -30,37 +30,37 @@ export default function Sonora() {
       </p>
       <StatGrid>
         <StatBlock className="warning">
-          <p className="font-small">+269</p>
+          <p className="font-small">+295</p>
           <p>{dataTotals.confirmed}</p>
           <h3>Confirmados</h3>
         </StatBlock>
         <StatBlock className="caution">
-          <p className="font-small">-43</p>
+          <p className="font-small">-5</p>
           <p>{active}</p>
           <h3>Activos</h3>
         </StatBlock>
         <StatBlock className="danger">
-          <p className="font-small">+28</p>
+          <p className="font-small">+30</p>
           <p>{dataTotals.deaths}</p>
           <h3>Decesos</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+284</p>
+          <p className="font-small">+270</p>
           <p>{dataTotals.recoveries}</p>
           <h3>Recuperados</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+343</p>
+          <p className="font-small">+413</p>
           <p>{dataTotals.tests}</p>
           <h3>Pruebas</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+74</p>
+          <p className="font-small">+118</p>
           <p>{dataTotals.negatives}</p>
           <h3>Descartados</h3>
         </StatBlock>
         <StatBlock>
-          <p className="font-small">+0.16%</p>
+          <p className="font-small">+0.06%</p>
           <p>{result.toFixed(2)}% </p>
           <h3>Positivos/Pruebas</h3>
         </StatBlock>
