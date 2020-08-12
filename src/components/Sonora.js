@@ -30,7 +30,7 @@ export default function Sonora() {
       </p>
       <StatGrid>
         <StatBlock className="warning">
-          <p className="font-small">+410</p>
+          <p className="font-small">+418</p>
           <p>{dataTotals.confirmed}</p>
           <h3>Confirmados</h3>
         </StatBlock>
