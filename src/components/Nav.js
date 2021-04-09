@@ -67,13 +67,10 @@ export default class Nav extends Component {
         <Link to="detalles" getProps={isActive}>
           Detalle
         </Link>
-        <Link to="noticias" getProps={isActive}>
-          Noticias
-        </Link>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://blog.monitorsonora.com/"
+          href="https://monitorsonora.com/"
         >
           Blog
         </a>

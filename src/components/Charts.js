@@ -26,7 +26,7 @@ const ChartPieSection = styled.div`
   }
 `;
 
-const datesArray = getDates(new Date("03/15/2020"), new Date());
+const datesArray = getDates(new Date("03/15/2020"), new Date("09/02/2020"));
 
 const confirmed = {
   labels: datesArray.map((date) => date.displayFormat),
